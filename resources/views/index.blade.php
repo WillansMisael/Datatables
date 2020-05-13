@@ -19,10 +19,10 @@
             <table id="users" class="table">
                 <thead>
                     <tr>    
-                        <th>ID</th>
+                        <th with="10px">ID</th>
                         <th>Nombre</th>
                         <th>Email</th>
-                        <th>&nbsp;</th>
+                        <th with="120px">&nbsp;</th>
                     </tr>
                 </thead>
                
@@ -46,7 +46,31 @@
                         {data: 'name'},
                         {data: 'email'},
                         {data: 'btn'}
-                    ]
+                    ],
+                    "language": {
+                        "info": "_TOTAL_ registros",
+                        "search": "Buscar",
+                        "paginate": {
+                            "next": "Siguiente",
+                            "previous": "Anterior",
+                        },
+                        "lengthMenu": 'Mostrar <select>'+
+                                        '<option value="10">10</option>'+
+                                        '<option value="30">30</option>'+
+                                        '<option value="-1">Todos</option>'+
+                                        '</select> registros',
+                        "loadingRecords": "Cargando...",
+                        "processing": "Procesando...",
+                        "emptyTable": "No hay datos",
+                        "zeroRecords":"No hay coincidencias",
+                        "infoEmpty": "_TOTAL_ registros",
+                        "infoFiltered":"",
+                    }
+                    /*
+                    Tambien para poder configurar todo a español 
+                    se puede adicionar  'url' : '//cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json'
+                    en language
+                    */
                 });
             });
         </script>
