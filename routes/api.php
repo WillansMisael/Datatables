@@ -13,7 +13,10 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+Route::get('users',function(){
+    //carga del lado del servidor
+    //instalamos yajra con composer require yajra/laravel-datatables-oracle
+    //formateo de datos 
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+    return datatables()->eloquent(App\User::query())->toJson();
 });
