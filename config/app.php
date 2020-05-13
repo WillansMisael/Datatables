@@ -178,6 +178,8 @@ return [
         Yajra\DataTables\DataTablesServiceProvider::class,
         //laravel-dompdf
         Barryvdh\DomPDF\ServiceProvider::class,
+        //excel
+        Maatwebsite\Excel\ExcelServiceProvider::class,
 
     ],
 
@@ -234,6 +236,8 @@ return [
         'DataTables' => Yajra\DataTables\Facades\DataTables::class,
         //laravel-dompdf
         'PDF' => Barryvdh\DomPDF\Facade::class,
+        //excel
+        'Excel' => Maatwebsite\Excel\Facades\Excel::class,
     ],
 
 ];

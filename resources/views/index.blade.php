@@ -25,10 +25,14 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-4">
-                <h3>Exportar usuarios en PDF</h3>
+                <h3>Exportar usuarios</h3>
                 <p>
                     Clic <a href="{{ route('users.pdf') }}"> aquí </a>
                     para descargar en PDF a los usuarios
+                </p>
+                <p>
+                    Clic <a href="{{ route('users.excel') }}"> aquí </a>
+                    para descargar en excel a los usuarios
                 </p>
             </div>
             <div class="col-sm-12 col-md-8  table-responsive">

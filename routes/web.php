@@ -19,3 +19,4 @@ Route::get('/', function () {
 Route::resource('users','UserController');
 
 Route::get('user-list-pdf', 'UserController@exportPdf')->name('users.pdf');
+Route::get('user-list-excel', 'UserController@exportExcel')->name('users.excel');
