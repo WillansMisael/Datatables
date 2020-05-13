@@ -22,7 +22,7 @@
                         <th>ID</th>
                         <th>Nombre</th>
                         <th>Email</th>
-                        
+                        <th>&nbsp;</th>
                     </tr>
                 </thead>
                
@@ -45,6 +45,7 @@
                         {data: 'id'},
                         {data: 'name'},
                         {data: 'email'},
+                        {data: 'btn'}
                     ]
                 });
             });

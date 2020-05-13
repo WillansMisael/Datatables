@@ -18,5 +18,9 @@ Route::get('users',function(){
     //instalamos yajra con composer require yajra/laravel-datatables-oracle
     //formateo de datos 
 
-    return datatables()->eloquent(App\User::query())->toJson();
+    return datatables()
+    ->eloquent(App\User::query())
+    ->addColumn('btn','actions')
+    ->rawColumns(['btn'])
+    ->toJson();
 });
