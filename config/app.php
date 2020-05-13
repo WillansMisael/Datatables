@@ -176,6 +176,8 @@ return [
         App\Providers\RouteServiceProvider::class,
         //yajra
         Yajra\DataTables\DataTablesServiceProvider::class,
+        //laravel-dompdf
+        Barryvdh\DomPDF\ServiceProvider::class,
 
     ],
 
@@ -230,7 +232,8 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         //yajra
         'DataTables' => Yajra\DataTables\Facades\DataTables::class,
-
+        //laravel-dompdf
+        'PDF' => Barryvdh\DomPDF\Facade::class,
     ],
 
 ];

@@ -15,19 +15,37 @@
         </style>
     </head>
     <body>
-        <div class="container">
-            <table id="users" class="table">
-                <thead>
-                    <tr>    
-                        <th with="10px">ID</th>
-                        <th>Nombre</th>
-                        <th>Email</th>
-                        <th with="120px">&nbsp;</th>
-                    </tr>
-                </thead>
-               
-            </table>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center py-3">Usuarios</h1>
+            </div>
         </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <h3>Exportar usuarios en PDF</h3>
+                <p>
+                    Clic <a href="{{ route('users.pdf') }}"> aquí </a>
+                    para descargar en PDF a los usuarios
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-8  table-responsive">
+                <h3 class="text-center py-2">Lista de usuarios</h3>
+                <table id="users" class="table table-striped">
+                    <thead>
+                        <tr>    
+                            <th with="10px">ID</th>
+                            <th>Nombre</th>
+                            <th>Email</th>
+                            <th with="120px">&nbsp;</th>
+                        </tr>
+                    </thead>
+                
+                </table>
+            </div>
+
 
 
 
