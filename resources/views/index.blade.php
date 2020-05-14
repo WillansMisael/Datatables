@@ -34,6 +34,20 @@
                     Clic <a href="{{ route('users.excel') }}"> aquí </a>
                     para descargar en excel a los usuarios
                 </p>
+                
+                <h3>Importar usuarios</h3>
+                <form action="{{ route('users.import.excel') }}" method="post" enctype="multipart/form-data">
+                    @csrf
+                    
+                    @if(Session::has('message'))
+                    <p>{{ Session::get('message') }}</p>
+                    @endif
+
+                    <input type="file" name="file">
+
+                    <button>Importar Usuarios</button>
+                </form>
+
             </div>
             <div class="col-sm-12 col-md-8  table-responsive">
                 <h3 class="text-center py-2">Lista de usuarios</h3>
